@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import profile from "../../image/profile.png";
 import "./Profile.css";
 
@@ -10,6 +10,16 @@ const Profile = ({ selectSub }) => {
 
   const [time, setTime] = useState(0);
 
+  const setBreakTime = (break1) => {
+    setTime(break1);
+    localStorage.setItem("breakTime", break1);
+  };
+
+  useEffect(() => {
+    const storedCart = localStorage.getItem("breakTime");
+    const data = JSON.parse(storedCart);
+    setTime(data);
+  }, []);
 
   return (
     <div className="main">
@@ -28,19 +38,19 @@ const Profile = ({ selectSub }) => {
       <div className="break">
         <h3>Add A Break </h3>
         <div className="allBtn">
-          <button onClick={() => setTime(5)} className="break-btn">
+          <button onClick={() => setBreakTime(5)} className="break-btn">
             05m
           </button>
-          <button onClick={() => setTime(10)} className="break-btn">
+          <button onClick={() => setBreakTime(10)} className="break-btn">
             10m
           </button>
-          <button onClick={() => setTime(15)} className="break-btn">
+          <button onClick={() => setBreakTime(15)} className="break-btn">
             15m
           </button>
-          <button onClick={() => setTime(18)} className="break-btn">
+          <button onClick={() => setBreakTime(18)} className="break-btn">
             18m
           </button>
-          <button onClick={() => setTime(20)} className="break-btn">
+          <button onClick={() => setBreakTime(20)} className="break-btn">
             20m
           </button>
         </div>
