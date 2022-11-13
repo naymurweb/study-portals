@@ -3,23 +3,38 @@
   grid-template-columns: 4fr 1fr;
 }
 
-.subject-container{
+.subject-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 45px;
   padding: 50px;
   background-color: #dde5e5;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  width: 80px;
+}
+
+.profile-container {
+  padding: 50px 20px;
+}
+
 @media only screen and (max-width: 688px) {
 
-  .subject-container{
+  .subject-container {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     padding: 50px;
   }
 }
+
 .App {
   text-align: center;
 }
