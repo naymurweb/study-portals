@@ -1,5 +1,5 @@
 .subject img {
-    width: 100%;
+    width: 66%;
     border-radius: 8px;
 }
 
@@ -8,7 +8,13 @@
     border-radius: 8px;
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
 }
+
+p {
+    font-size: 15px;
+}
+
 
 .sub-btn {
     width: 100%;

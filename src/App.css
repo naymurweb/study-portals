@@ -3,12 +3,16 @@
   grid-template-columns: 4fr 1fr;
 }
 
+.main-sub{
+  background-color: #dde5e5;
+
+
+}
 .subject-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
   padding: 50px;
-  background-color: #dde5e5;
 }
 
 .header {

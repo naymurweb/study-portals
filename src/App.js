@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Profile from "./Components/Profile/Profile";
 import Subject from "./Components/Subject/Subject";
-import logo from'./image/favicon.png'
+import logo from "./image/favicon.png";
 
 function App() {
   const [data, setData] = useState([]);
@@ -12,25 +12,37 @@ function App() {
       .then((data) => setData(data));
   }, []);
 
+  const [sub, setSub] = useState([]);
+  const subBtn = (subject) => {
+    // console.log(sub);
+    const newSub = [...sub, subject];
+    setSub(newSub)
+  };
+
+
   return (
     <div className="main-container">
-      <div>
-        <div className="header">
-        <img src={logo} alt="" />
-
-        <h1>study portals</h1>
-        </div>
       
+      <div className="main-sub">
+        <div className="header">
+          <img src={logo} alt="" />
+
+          <h1>study portals</h1>
+        </div>
 
         <div className="subject-container">
           {data.map((subject) => (
-            <Subject allSubject={subject} key={subject.id}></Subject>
+            <Subject
+              btnClick={subBtn}
+              allSubject={subject}
+              key={subject.id}
+            ></Subject>
           ))}
         </div>
       </div>
 
       <div className="profile-container">
-        <Profile></Profile>
+        <Profile selectSub={sub}></Profile>
       </div>
     </div>
   );

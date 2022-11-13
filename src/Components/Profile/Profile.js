@@ -2,7 +2,12 @@ import React from "react";
 import profile from "../../image/profile.png";
 import "./Profile.css";
 
-const Profile = () => {
+const Profile = ({ selectSub }) => {
+  let totalTime = 0;
+  selectSub.forEach((element) => {
+    totalTime = totalTime + element.time;
+  });
+
   return (
     <div className="main">
       <div className="profile1">
@@ -10,10 +15,7 @@ const Profile = () => {
         <h3>Naymur Rahman</h3>
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-        suscipit mollitia, consequatur explicabo adipisci distinctio
-        consequuntur atque iure placeat repellendus sunt sit, eveniet, quidem
-        nihil dolor ea tempore officia quod!
+      A Frontend Developer. I started my journey as a web developer in 2020. As well as work I also continued to keep learning and exploring new technologies for updating myself. I've made myself more efficient and productive. I love to learn new technologies and work on them. I strongly believe there is always "One More Thing" to learn.
       </p>
 
       <div className="break">
@@ -26,14 +28,12 @@ const Profile = () => {
           <button className="break-btn">20m</button>
         </div>
       </div>
-       
-       <div className="details">
+
+      <div className="details">
         <h3>Exercise Details</h3>
-        <h4>Exercise time:12m</h4>
+        <h4>total time: {totalTime}m</h4>
         <h4>Break time:12m</h4>
-       </div>
-
-
+      </div>
     </div>
   );
 };
