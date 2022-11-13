@@ -1,0 +1,19 @@
+.subject img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.subject {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sub-btn {
+    width: 100%;
+    background-color: #E03B8B;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}

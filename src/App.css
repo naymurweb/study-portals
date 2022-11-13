@@ -1,3 +1,25 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.subject-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 45px;
+  padding: 50px;
+  background-color: #dde5e5;
+}
+
+@media only screen and (max-width: 688px) {
+
+  .subject-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    padding: 50px;
+  }
+}
 .App {
   text-align: center;
 }
@@ -32,6 +54,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
