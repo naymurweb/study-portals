@@ -3,11 +3,12 @@
   grid-template-columns: 4fr 1fr;
 }
 
-.main-sub{
+.main-sub {
   background-color: #dde5e5;
 
 
 }
+
 .subject-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -29,6 +30,20 @@
   padding: 50px 20px;
 }
 
+
+
+
+/* Medium devices (landscape tablets, 689px and up) */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .subject-container {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+/* Extra small devices (phones, 688px and down) */
 @media only screen and (max-width: 688px) {
 
   .subject-container {
@@ -37,7 +52,15 @@
     gap: 30px;
     padding: 50px;
   }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 }
+
+
 
 .App {
   text-align: center;

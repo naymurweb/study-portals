@@ -28,7 +28,7 @@ const Profile = ({ selectSub }) => {
         <h3>Naymur Rahman</h3>
       </div>
       <p>
-        A Frontend Developer. I started my journey as a web developer in 2020.
+        I am a student. I started my journey student in 2022.
         As well as work I also continued to keep learning and exploring new
         technologies for updating myself. I've made myself more efficient and
         productive. I love to learn new technologies and work on them. I
@@ -57,7 +57,7 @@ const Profile = ({ selectSub }) => {
       </div>
 
       <div className="details">
-        <h3>Exercise Details</h3>
+        <h3>study Details</h3>
         <h4>total time: {totalTime}m</h4>
         <h4>Break time: {time}m</h4>
       </div>

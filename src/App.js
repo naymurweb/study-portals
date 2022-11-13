@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Profile from "./Components/Profile/Profile";
+import Question from "./Components/Quasion/Question";
 import Subject from "./Components/Subject/Subject";
 import logo from "./image/favicon.png";
 
@@ -16,9 +17,8 @@ function App() {
   const subBtn = (subject) => {
     // console.log(sub);
     const newSub = [...sub, subject];
-    setSub(newSub)
+    setSub(newSub);
   };
-
 
   return (
     <div className="main-container">
@@ -39,6 +39,7 @@ function App() {
             ></Subject>
           ))}
         </div>
+        <Question></Question>
       </div>
 
       <div className="profile-container">
