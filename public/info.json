@@ -1,0 +1,44 @@
+[
+  {
+     "id":1,
+     "img":"https://i.ibb.co/VwnkkCC/81-Wxk7-Cc-n-L-1.jpg",
+     "subject":"Chemistry",
+     "time":"20m",
+     "details":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nobis, iste molestias temporibus tempora nam iure itaque corrupti voluptates voluptas, eum a recusandae officiis voluptatum aliquam enim natus incidunt in repudiandae totam. Repellendus, assumenda a?"
+  },
+  {
+     "id":2,
+     "img":"https://i.ibb.co/QMLfmD1/81-Wxk7-Cc-n-L-2.jpg",
+     "subject":"Biology",
+     "time":"25m",
+     "details":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nobis, iste molestias temporibus tempora nam iure itaque corrupti voluptates voluptas, eum a recusandae officiis voluptatum aliquam enim natus incidunt in repudiandae totam. Repellendus, assumenda a?"
+  },
+  {
+     "id":3,
+     "img":"https://i.ibb.co/G7t4vDM/81-Wxk7-Cc-n-L-3.jpg",
+     "subject":"Physics",
+     "time":"30m",
+     "details":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nobis, iste molestias temporibus tempora nam iure itaque corrupti voluptates voluptas, eum a recusandae officiis voluptatum aliquam enim natus incidunt in repudiandae totam. Repellendus, assumenda a?"
+  },
+  {
+     "id":4,
+     "img":"https://i.ibb.co/Byk0qs4/81-Wxk7-Cc-n-L-4.jpg",
+     "subject":"Mathematic",
+     "time":"35m",
+     "details":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nobis, iste molestias temporibus tempora nam iure itaque corrupti voluptates voluptas, eum a recusandae officiis voluptatum aliquam enim natus incidunt in repudiandae totam. Repellendus, assumenda a?"
+  },
+  {
+     "id":5,
+     "img":"https://i.ibb.co/DV3LhZ4/81-Wxk7-Cc-n-L.jpg",
+     "subject":"English",
+     "time":"25m",
+     "details":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nobis, iste molestias temporibus tempora nam iure itaque corrupti voluptates voluptas, eum a recusandae officiis voluptatum aliquam enim natus incidunt in repudiandae totam. Repellendus, assumenda a?"
+  },
+  {
+     "id":6,
+     "img":"https://i.ibb.co/4NHxmCG/11.jpg",
+     "subject":"Ict skills ",
+     "time":"25m",
+     "details":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus nobis, iste molestias temporibus tempora nam iure itaque corrupti voluptates voluptas, eum a recusandae officiis voluptatum aliquam enim natus incidunt in repudiandae totam. Repellendus, assumenda a?"
+  }
+]
